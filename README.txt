@@ -1,0 +1,4 @@
+CHESS Readme.txt
+
+I altered the base design by making a 2-D array of a class called Tile (extends GameObj), I created a class called ChessPiece which has subclasses for every piece needed for the game. These pieces all have a color, initial location, and can be instantiated onto the location of a tile.
+I implemented functions which search the state of the game to return all possible moves for any given piece. I used JUnit testing to make sure that certain functions work correctly, particularly one piece capturing another. Tiles and Pieces reference each other using getX and getY methods. Board is 320 x320, each piece is size 40, ints in methods are scaled so objects are accessed with #s 0-7.
